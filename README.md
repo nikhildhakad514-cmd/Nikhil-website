@@ -7,7 +7,7 @@ This project showcases my work, projects, and contact information in a clean and
 
 ## 🚀 Live Demo
 
-🔗 [https://nikhil-website-eec32wtd9-nikhildhakad514-cmds-projects.vercel.app]
+🔗 [[https://nikhil-website-eec32wtd9-nikhildhakad514-cmds-projects.vercel.app](https://nikhil-website-dx7ekp7pm-nikhildhakad514-cmds-projects.vercel.app/)]
 
 ---
 
