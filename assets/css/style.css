@@ -808,12 +808,6 @@ nav {
   display: block;
 }
 
-.testimonial-video-wrap iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-  display: block;
-}
 /* ─── ABOUT STATS ─────────────────────────────── */
 
 .about-stats {
@@ -941,6 +935,8 @@ nav {
 
 .blog-item-left h3 {
   color: var(--text);
+  line-height: 1.35;
+  word-break: break-word;
   font-size: 20px;
   margin-bottom: 8px;
   transition: color 0.3s;
@@ -1343,4 +1339,13 @@ nav {
   .video-card.portrait {
     width: 62vw;
   }
+}
+.blog-item-left {
+  flex: 1;
+  min-width: 0;
+}
+.blog-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
