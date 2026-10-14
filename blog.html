@@ -3,12 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog – Nikhil · Script Strategist</title>
-    <meta
-      name="description"
-      content="Articles on psychology, attention, scriptwriting, and content strategy."
-    />
+    <title>Writing & Ideas | Nikhil</title>
+    <meta name="description" content="Notes on storytelling, communication, psychology, and content strategy from Nikhil." />
 
+    <link rel="canonical" href="https://nikhild.dpdns.org/blog.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Writing & Ideas | Nikhil" />
+    <meta property="og:description" content="Notes on storytelling, communication, psychology, and content strategy from Nikhil." />
+    <meta property="og:url" content="https://nikhild.dpdns.org/blog.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Writing & Ideas | Nikhil" />
+    <meta name="twitter:description" content="Notes on storytelling, communication, psychology, and content strategy from Nikhil." />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Manrope:wght@400;500;600;700&display=swap"
@@ -19,22 +24,22 @@
 
   <body>
     <div id="progress-bar"></div>
-    <div id="nav-overlay" class="nav-overlay"></div>
+    <div id="nav-overlay" class="nav-overlay" aria-hidden="true"></div>
 
     <!-- ─── NAV ─────────────────────────────────── -->
-    <nav>
+    <nav aria-label="Primary navigation">
       <a href="index.html" class="nav-brand">
         <h2>Nikhil</h2>
-        <span>Script Strategist</span>
+        <span>Content Strategist</span>
       </a>
-      <div class="nav-links">
+      <div class="nav-links" id="primary-navigation">
         <a href="index.html">Home</a>
         <a href="work.html">Work</a>
         <a href="blog.html">Blog</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </div>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <button class="hamburger" id="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
         <span></span><span></span><span></span>
       </button>
     </nav>
@@ -44,8 +49,7 @@
       <span class="eyebrow reveal">Writing</span>
       <h1 class="reveal">Articles on<br />Attention &amp; Craft.</h1>
       <p class="reveal delay-1">
-        Deep dives into psychology, scriptwriting, and the mechanics of content
-        that actually holds people's focus.
+        Working notes on storytelling, communication, psychology, and content strategy. Each piece starts with a question, tests an idea, and looks for a practical use.
       </p>
     </section>
 
@@ -80,11 +84,11 @@
           sent occasionally. No noise.
         </p>
         <a
-          href="mailto:nikhildhakad514@gmail.com?subject=Subscribe to updates"
+          href="mailto:nikhildhakad514@gmail.com?subject=Blog%20topic%20idea"
           class="btn"
           style="margin-top: 20px"
         >
-          Send Me Updates →
+          Suggest a Topic →
         </a>
       </div>
     </section>
@@ -98,7 +102,7 @@
         <a href="contact.html">Contact</a>
         <a href="mailto:nikhildhakad514@gmail.com">Email</a>
       </div>
-      <p>© 2025 Nikhil · Script Strategist · Built with purpose</p>
+      <p>© 2026 Nikhil · Content Strategist · Built with purpose</p>
     </footer>
 
     <!-- Sticky mobile CTA -->

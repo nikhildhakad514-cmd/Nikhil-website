@@ -1,13 +1,13 @@
 # 🌐 Nikhil Website
 
 A personal portfolio website built using HTML, CSS, and JavaScript.
-This project showcases my work, projects, and contact information in a clean and responsive layout.
+This project showcases content strategy, scriptwriting, visual design, writing, and contact information in a responsive multi-page portfolio.
 
 ---
 
 ## 🚀 Live Demo
 
-🔗 [https://nikhil-website-eec32wtd9-nikhildhakad514-cmds-projects.vercel.app]
+🔗 [https://nikhild.dpdns.org](https://nikhild.dpdns.org)
 
 ---
 
