@@ -96,7 +96,9 @@ main { overflow: clip; }
 .project { display: grid; grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr); gap: clamp(28px, 5vw, 76px); padding-block: clamp(42px, 7vw, 88px); border-top: 1px solid var(--line); }
 .project:nth-of-type(even) .project-media { order: 2; }
 .project-media { align-self: start; }
-.project-media img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: #171717; border: 1px solid var(--line); }
+.project-media img { display: block; width: 100%; height: auto; aspect-ratio: auto; object-fit: contain; background: #171717; border: 1px solid var(--line); }
+/* Artwork with embedded typography must never be cropped to fit a landscape card. */
+.project-media--portrait img { width: 100%; max-height: min(78vh, 760px); aspect-ratio: 9 / 16; object-fit: contain; object-position: center top; }
 .project-copy { padding-top: 4px; }
 .project-no { color: var(--red); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; }
 .project h2 { margin: 18px 0 16px; font-family: var(--serif); font-size: clamp(35px, 5vw, 62px); font-weight: 400; letter-spacing: -.05em; line-height: .98; }
@@ -107,7 +109,7 @@ main { overflow: clip; }
 .project-link { display: inline-flex; gap: 10px; align-items: center; margin-top: 6px; padding-bottom: 7px; border-bottom: 1px solid var(--red); font-size: 13px; }
 .visual-index { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
 .visual-index figure { margin: 0; }
-.visual-index img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; background: #171717; border: 1px solid var(--line); }
+.visual-index img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: contain; object-position: center; background: #171717; border: 1px solid var(--line); }
 .visual-index figcaption { padding-top: 10px; color: var(--paper-dim); font-size: 11px; }
 .editorial-copy { display: grid; grid-template-columns: .45fr 1fr; gap: 24px; }
 .editorial-copy .copy-label { color: var(--red); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; }
@@ -154,7 +156,8 @@ main { overflow: clip; }
   .quote-credit { grid-column: 1; margin-top: 0; }
   .project { grid-template-columns: 1fr; gap: 25px; }
   .project:nth-of-type(even) .project-media { order: 0; }
-  .project-media img { aspect-ratio: 16 / 10; }
+  .project-media img { aspect-ratio: auto; }
+  .project-media--portrait img { width: min(100%, 440px); max-height: none; aspect-ratio: auto; margin-inline: auto; }
   .project-details { gap: 18px; }
   .visual-index { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 12px; }
   .note-row { grid-template-columns: 35px minmax(0, 1fr) auto; gap: 12px; }
