@@ -1,7 +1,7 @@
 /* Long-form script reading page */
 .script-page .reading-title em { color: var(--red); font-style: normal; }
 .script-cover { margin: 34px 0 0; }
-.script-cover img { width: 100%; max-height: 420px; object-fit: cover; border: 1px solid var(--line); }
+.script-cover img { display: block; width: auto; max-width: 100%; height: auto; max-height: none; object-fit: contain; object-position: center; margin-inline: auto; border: 1px solid var(--line); }
 .script-brief { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; margin: 34px 0 62px; background: var(--line); border: 1px solid var(--line); }
 .script-brief > div { padding: 18px 20px; background: var(--ink, #0b0b0b); }
 .script-brief span, .hook-card-head, .script-section-label { color: var(--red); font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
